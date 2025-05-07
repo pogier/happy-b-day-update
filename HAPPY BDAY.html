@@ -123,12 +123,12 @@
 
     </div>
     
-    <!-- Music control button -->
+
     <div class="music-control" id="musicControl">
         <i class="fas fa-music"></i>
     </div>
     
-    <!-- Audio element (hidden) -->
+ 
     <audio id="bgMusic" loop>
         <source src="https://github.com/pogier/happy-birthday/raw/main/_%20%20%20%20%20%20%20.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
@@ -152,20 +152,6 @@
     'https://raw.githubusercontent.com/pogier/happy-b-day-update/main/451274957_417182598008564_7618614709666170060_n.jpg',
     'https://raw.githubusercontent.com/pogier/happy-b-day-update/main/453404233_481878594449877_7857376397168475065_n.jpg',
     'https://raw.githubusercontent.com/pogier/happy-b-day-update/main/462556490_583529650889989_6460639195322390193_n.jpg',
-    'https://raw.githubusercontent.com/pogier/happy-birthday/main/357245918_751419786989707_1498815506532655800_n.jpg',
-    'https://raw.githubusercontent.com/pogier/happy-birthday/main/361044464_974589953662721_3289962504816625553_n.jpg',
-    'https://raw.githubusercontent.com/pogier/happy-birthday/main/483716347_1681687849404549_7478633680418498495_n.jpg',
-    'https://raw.githubusercontent.com/pogier/happy-birthday/main/482939683_1199563195096839_6737949338541187819_n.jpg',
-    'https://raw.githubusercontent.com/pogier/happy-birthday/main/483792194_1702307897303054_720750197222812306_n.jpg',
-    'https://raw.githubusercontent.com/pogier/happy-birthday/main/483960673_1017368273204713_3885937030680609043_n.jpg',
-    'https://raw.githubusercontent.com/pogier/happy-birthday/main/483820976_477438048781091_6468793998470013666_n.jpg',
-    'https://raw.githubusercontent.com/pogier/happy-birthday/main/485261255_543958108746010_5483128468943646314_n.jpg',
-    'https://raw.githubusercontent.com/pogier/happy-birthday/main/385536933_273173532252312_9203653718120508350_n.jpg',
-    'https://raw.githubusercontent.com/pogier/happy-birthday/main/421114599_401835482231131_7791129654652981035_n.jpg',
-    'https://raw.githubusercontent.com/pogier/happy-birthday/main/440884640_295658116834579_8429973019000477111_n.jpg',
-    'https://raw.githubusercontent.com/pogier/happy-birthday/main/440988588_815296477147777_1281145338116731120_n.jpg',
-    'https://raw.githubusercontent.com/pogier/happy-birthday/main/453404233_481878594449877_7857376397168475065_n.jpg',
-    'https://raw.githubusercontent.com/pogier/happy-birthday/main/462556490_583529650889989_6460639195322390193_n.jpg',
     'https://raw.githubusercontent.com/pogier/happy-birthday/main/462560302_1292957095240147_417661533735107777_n.jpg',
     'https://raw.githubusercontent.com/pogier/happy-birthday/main/462560319_9193219004074774_5207974657406143567_n.jpg',
     'https://raw.githubusercontent.com/pogier/happy-birthday/main/462566866_1109921370384112_4697317996582306313_n.jpg',
@@ -211,9 +197,9 @@
                     console.log("Autoplay was prevented. Please click the music button to play.");
                 });
             }
-        }, { once: true }); // Only try once
+        }, { once: true }); 
         
-        // Toggle music play/pause
+   
         musicControl.addEventListener('click', function() {
             if (isMusicPlaying) {
                 bgMusic.pause();
@@ -225,7 +211,7 @@
             isMusicPlaying = !isMusicPlaying;
         });
         
-        // Photo display functionality
+    
         document.body.addEventListener('click', function(e) {
             if (e.target.classList.contains('displayed-photo') || 
                 e.target.classList.contains('music-control') ||
